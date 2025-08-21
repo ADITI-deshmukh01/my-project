@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Training & Placement • College T&P Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <div class="brand">
+        <div class="logo"></div>
+        <a href="index.html">College T&P Portal</a>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="tnp.html">Training &amp; Placement</a>
+        <a href="higher-studies.html">Higher Studies</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu"><i class="fa fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">Training &amp; Placement</h1>
+        <p class="lead">From skill-building to final placements, here is how we prepare you for success.</p>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3><i class="fa fa-rocket"></i> Skill Development</h3>
+            <p>Workshops on programming, analytics, communication, and aptitude.</p>
+          </div>
+          <div class="card">
+            <h3><i class="fa fa-comments"></i> Mock Interviews</h3>
+            <p>HR and technical rounds simulated by alumni and industry experts.</p>
+          </div>
+          <div class="card">
+            <h3><i class="fa fa-file-lines"></i> Resume Clinics</h3>
+            <p>Polish your resume and LinkedIn to stand out to recruiters.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="prep" class="section">
+      <div class="container">
+        <h2 class="section-title">Preparation Tracks</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Software Roles</h3>
+            <p>DS&A, system design, coding contests, and project mentoring.</p>
+            <a class="btn" href="#resources">Resources</a>
+          </div>
+          <div class="card">
+            <h3>Consulting / Analytics</h3>
+            <p>Case interviews, market sizing, data storytelling, and tools.</p>
+            <a class="btn" href="#resources">Resources</a>
+          </div>
+          <div class="card">
+            <h3>Core Engineering</h3>
+            <p>Domain fundamentals, problem-solving labs, and GATE prep.</p>
+            <a class="btn" href="#resources">Resources</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Gallery">
+      <div class="container">
+        <h2 class="section-title">Campus Moments</h2>
+        <div class="grid-3">
+          <img class="card" alt="Workshop" src="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=1200&auto=format&fit=crop" />
+          <img class="card" alt="Recruiter talk" src="https://images.unsplash.com/photo-1584697964403-26d1e4f10738?q=80&w=1200&auto=format&fit=crop" />
+          <img class="card" alt="Placements" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop" />
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="section">
+      <div class="container">
+        <h2 class="section-title">Resources</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Interview Question Banks</h3>
+            <p>Company-wise questions and role-specific topics.</p>
+            <a class="btn" href="#">Download</a>
+          </div>
+          <div class="card">
+            <h3>Resume Templates</h3>
+            <p>Modern and ATS-compatible formats for freshers.</p>
+            <a class="btn" href="#">Download</a>
+          </div>
+          <div class="card">
+            <h3>Alumni Mentorship</h3>
+            <p>Connect with seniors and alumni for guidance.</p>
+            <a class="btn" href="#">Register</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <div class="logo"></div>
+          <div>
+            <strong>College T&P Cell</strong>
+            <div>Shaping futures with industry partnerships</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <strong>Quick Links</strong>
+        <ul style="list-style: none; padding: 8px 0 0; margin: 0;">
+          <li><a class="btn" style="padding:6px 10px; display:inline-block; margin:4px 0;" href="tnp.html">T&amp;P</a></li>
+          <li><a class="btn" style="padding:6px 10px; display:inline-block; margin:4px 0;" href="higher-studies.html">Higher Studies</a></li>
+          <li><a class="btn" style="padding:6px 10px; display:inline-block; margin:4px 0;" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <div style="margin-top: 8px;">
+          <div><i class="fa fa-location-dot"></i> Campus Road, City</div>
+          <div><i class="fa fa-envelope"></i> tnp@college.edu</div>
+          <div><i class="fa fa-phone"></i> +91 98765 43210</div>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">© <span id="year"></span> College T&P Cell. All rights reserved.</div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="./script.js"></script>
+</body>
+</html>

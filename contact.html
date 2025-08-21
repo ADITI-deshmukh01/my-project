@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Contact — CampusPlacement</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<header class="site-header">
+		<div class="container nav">
+			<a href="index.html" class="brand">
+				<img src="images/logo.png" alt="CampusPlacement logo" class="logo" />
+				<span class="brand-text">CampusPlacement</span>
+			</a>
+
+			<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
+			<label for="nav-toggle" class="hamburger" aria-hidden="true"><span></span><span></span><span></span></label>
+
+			<nav class="menu" aria-label="Primary">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="training.html">Training + Placement</a>
+				<a href="higher-studies.html">Higher Studies</a>
+				<a href="contact.html" class="active">Contact</a>
+				<a href="contact.html" class="btn btn-sm btn-primary">Request Access</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="section hero">
+			<div class="container hero-grid">
+				<div class="hero-text">
+					<h1>Contact us</h1>
+					<p>Students, recruiters, and universities — we’d love to help.</p>
+					<ul class="hero-highlights">
+						<li><i class="fa-solid fa-circle-check"></i> Setup for institutions</li>
+						<li><i class="fa-solid fa-circle-check"></i> Recruiter partnerships</li>
+						<li><i class="fa-solid fa-circle-check"></i> Student support</li>
+					</ul>
+				</div>
+				<div class="hero-media">
+					<img src="https://images.unsplash.com/photo-1554774853-b415df9eeb92?auto=format&fit=crop&w=1600&q=80" alt="Support" />
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-alt">
+			<div class="container">
+				<div class="features-grid">
+					<div class="feature-card">
+						<i class="fa-solid fa-building"></i>
+						<h3>Office</h3>
+						<p>Training & Placement Cell, Your Campus, Your City, India</p>
+					</div>
+					<div class="feature-card">
+						<i class="fa-solid fa-envelope"></i>
+						<h3>Email</h3>
+						<p>support@CampusPlacement.careers</p>
+					</div>
+					<div class="feature-card">
+						<i class="fa-solid fa-phone"></i>
+						<h3>Phone</h3>
+						<p>+91 98765 43210</p>
+					</div>
+				</div>
+
+				<div class="split mt-24">
+					<div>
+						<header class="section-header left">
+							<h2>Send a message</h2>
+							<p>We typically reply within 24 hours.</p>
+						</header>
+
+						<form class="contact-form" onsubmit="return false" aria-label="Contact form">
+							<div class="form-row">
+								<div class="field"><label for="name">Full Name</label><input id="name" type="text" placeholder="Your name" required /></div>
+								<div class="field"><label for="email">Email</label><input id="email" type="email" placeholder="you@example.com" required /></div>
+							</div>
+							<div class="form-row">
+								<div class="field"><label for="role">I am a</label>
+									<select id="role" required><option value="">Select role</option><option>Student</option><option>Recruiter</option><option>University</option></select>
+								</div>
+								<div class="field"><label for="subject">Subject</label><input id="subject" type="text" placeholder="Access / Partnership / Query" /></div>
+							</div>
+							<div class="field"><label for="message">Message</label><textarea id="message" rows="6" placeholder="Tell us how we can help"></textarea></div>
+							<button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+						</form>
+					</div>
+
+					<div>
+						<header class="section-header left"><h2>Help topics</h2><p>Quick answers to common questions.</p></header>
+						<div class="faq">
+							<details><summary>How do institutions onboard?</summary><p>Contact us for a guided setup, data import, and admin training.</p></details>
+							<details><summary>Do you support SSO?</summary><p>Yes, SSO and role-based access for students and staff.</p></details>
+							<details><summary>Is data export available?</summary><p>Admins can export results, analytics, and drive records securely.</p></details>
+						</div>
+					</div>
+				</div>
+
+				<div class="banner mt-24">
+					<img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=1600&q=80" alt="Contact banner" />
+					<div class="banner-text">Partner with CampusPlacement to power your T&P Cell.</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-grid">
+			<div class="foot-brand">
+				<img src="images/logo.png" alt="CampusPlacement logo" class="logo small" />
+				<div><strong>CampusPlacement</strong><p>CareerConnect • Train. Apply. Advance.</p></div>
+			</div>
+			<nav class="foot-links">
+				<a href="about.html">About</a>
+				<a href="training.html">Training</a>
+				<a href="higher-studies.html">Higher Studies</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+			<div class="foot-social">
+				<a aria-label="LinkedIn" href="#"><i class="fa-brands fa-linkedin"></i></a>
+				<a aria-label="X" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+				<a aria-label="YouTube" href="#"><i class="fa-brands fa-youtube"></i></a>
+			</div>
+		</div>
+		<div class="container tiny">© <span id="year"></span> CampusPlacement. All rights reserved.</div>
+	</footer>
+
+	<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
