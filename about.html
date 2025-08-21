@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About • College T&P Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <div class="brand">
+        <div class="logo"></div>
+        <a href="index.html">College T&P Portal</a>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="tnp.html">Training &amp; Placement</a>
+        <a href="higher-studies.html">Higher Studies</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu"><i class="fa fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">About the T&amp;P Cell</h1>
+        <p class="lead">We bridge academia and industry to empower students with career readiness through training, internships, placements, and higher studies guidance.</p>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Our Mission</h3>
+            <p>To maximize student success by building strong industry partnerships and providing comprehensive career services and mentorship.</p>
+          </div>
+          <div class="card">
+            <h3>Our Vision</h3>
+            <p>To be a nationally recognized center for career excellence, fostering innovation, inclusivity, and lifelong learning.</p>
+          </div>
+          <div class="card">
+            <h3>What We Do</h3>
+            <p>Training programs, resume clinics, mock interviews, placement drives, internships, alumni connects, and postgraduate guidance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Meet the Team</h2>
+        <div class="grid-3">
+          <div class="card">
+            <img alt="T&P Head" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=1200&auto=format&fit=crop" style="height:180px; width:100%; object-fit:cover; border-radius:10px;" />
+            <h3>Dr. A. Sharma</h3>
+            <p>T&amp;P Officer</p>
+          </div>
+          <div class="card">
+            <img alt="Coordinator" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1200&auto=format&fit=crop" style="height:180px; width:100%; object-fit:cover; border-radius:10px;" />
+            <h3>Ms. R. Gupta</h3>
+            <p>Coordinator</p>
+          </div>
+          <div class="card">
+            <img alt="Alumni Mentor" src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=1200&auto=format&fit=crop" style="height:180px; width:100%; object-fit:cover; border-radius:10px;" />
+            <h3>Mr. V. Kumar</h3>
+            <p>Alumni Mentor</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <div class="logo"></div>
+          <div>
+            <strong>College T&P Cell</strong>
+            <div>Shaping futures with industry partnerships</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <strong>Quick Links</strong>
+        <ul style="list-style: none; padding: 8px 0 0; margin: 0;">
+          <li><a class="btn" style="padding:6px 10px; display:inline-block; margin:4px 0;" href="tnp.html">T&amp;P</a></li>
+          <li><a class="btn" style="padding:6px 10px; display:inline-block; margin:4px 0;" href="higher-studies.html">Higher Studies</a></li>
+          <li><a class="btn" style="padding:6px 10px; display:inline-block; margin:4px 0;" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <div style="margin-top: 8px;">
+          <div><i class="fa fa-location-dot"></i> Campus Road, City</div>
+          <div><i class="fa fa-envelope"></i> tnp@college.edu</div>
+          <div><i class="fa fa-phone"></i> +91 98765 43210</div>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">© <span id="year"></span> College T&P Cell. All rights reserved.</div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="./script.js"></script>
+</body>
+</html>

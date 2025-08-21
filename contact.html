@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact • College T&P Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .contact-grid { display:grid; grid-template-columns: 1.2fr 1fr; gap:16px; }
+    @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
+    .field { display:flex; flex-direction:column; gap:6px; margin-bottom:10px; }
+    .field input, .field textarea { padding:10px 12px; border-radius:10px; border:1px solid #e2e8f0; background:#fff; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <div class="brand">
+        <div class="logo"></div>
+        <a href="index.html">College T&P Portal</a>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="tnp.html">Training &amp; Placement</a>
+        <a href="higher-studies.html">Higher Studies</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu"><i class="fa fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">Contact Us</h1>
+        <div class="contact-grid">
+          <div class="card">
+            <h3>Send a Message</h3>
+            <form onsubmit="event.preventDefault(); alert('Message submitted!'); this.reset();">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" required />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button class="btn" type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="card">
+            <h3>Find Us</h3>
+            <p><i class="fa fa-location-dot"></i> Campus Road, City</p>
+            <p><i class="fa fa-envelope"></i> tnp@college.edu</p>
+            <p><i class="fa fa-phone"></i> +91 98765 43210</p>
+            <div style="overflow:hidden; border-radius:12px; box-shadow: var(--shadow-md);">
+              <iframe title="Map" src="https://maps.google.com/maps?q=college%20campus&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="280" style="border:0;" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <div class="logo"></div>
+          <div>
+            <strong>College T&P Cell</strong>
+            <div>Shaping futures with industry partnerships</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <strong>Quick Links</strong>
+        <ul style="list-style: none; padding: 8px 0 0; margin: 0;">
+          <li><a class="btn" style="padding:6px 10px; display:inline-block; margin:4px 0;" href="tnp.html">T&amp;P</a></li>
+          <li><a class="btn" style="padding:6px 10px; display:inline-block; margin:4px 0;" href="higher-studies.html">Higher Studies</a></li>
+          <li><a class="btn" style="padding:6px 10px; display:inline-block; margin:4px 0;" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <div style="margin-top: 8px;">
+          <div><i class="fa fa-location-dot"></i> Campus Road, City</div>
+          <div><i class="fa fa-envelope"></i> tnp@college.edu</div>
+          <div><i class="fa fa-phone"></i> +91 98765 43210</div>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">© <span id="year"></span> College T&P Cell. All rights reserved.</div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="./script.js"></script>
+</body>
+</html>
