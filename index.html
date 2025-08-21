@@ -1,214 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>College T&P Portal</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-+g8+9GdKMGxNRwzcCwQf2zv0hQhIOz8qgDgZ6vEe9bLQvJf1x6QbGv9yPcp9qvF8wVxwY7qVnyZ2iFz9f7x7eA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title> CampusPlacement Portal</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container navbar">
-      <div class="brand">
-        <div class="logo"></div>
-        <a href="index.html">College T&P Portal</a>
-      </div>
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="tnp.html">Training &amp; Placement</a>
-        <a href="higher-studies.html">Higher Studies</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <button class="menu-toggle" aria-label="Toggle menu"><i class="fa fa-bars"></i></button>
-    </div>
-  </header>
+	<header class="site-header">
+		<div class="container nav">
+			<a href="index.html" class="brand">
+				<img src="images/logo.png" alt="CampusPlacement logo" class="logo" />
+				<span class="brand-text"> CampusPlacement</span>
+			</a>
 
-  <main>
-    <section class="hero">
-      <div class="carousel container">
-        <div class="carousel-track">
-          <div class="slide">
-            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2000&auto=format&fit=crop" alt="Campus building" />
-            <div class="caption">
-              <div class="caption-content">
-                <div class="kicker">Welcome to</div>
-                <h1>Training & Placement Cell</h1>
-                <p>Empowering students with industry-ready skills and meaningful careers.</p>
-                <a class="btn" href="tnp.html">Explore T&amp;P</a>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2000&auto=format&fit=crop" alt="Placement drive" />
-            <div class="caption">
-              <div class="caption-content">
-                <div class="kicker">Recruiters</div>
-                <h1>Top Companies Hire Here</h1>
-                <p>Connect with 200+ recruiters across technology, consulting, and core sectors.</p>
-                <a class="btn secondary" href="#recruiters">View Recruiters</a>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=2000&auto=format&fit=crop" alt="Convocation" />
-            <div class="caption">
-              <div class="caption-content">
-                <div class="kicker">Success</div>
-                <h1>From Campus to Career</h1>
-                <p>Guidance for placements, internships, and higher studies—your path, your pace.</p>
-                <a class="btn" href="higher-studies.html">Higher Studies</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-controls">
-          <button class="carousel-prev" aria-label="Previous slide"><i class="fa fa-chevron-left"></i></button>
-          <button class="carousel-next" aria-label="Next slide"><i class="fa fa-chevron-right"></i></button>
-        </div>
-        <div class="carousel-indicators">
-          <button class="active" aria-label="Slide 1"></button>
-          <button aria-label="Slide 2"></button>
-          <button aria-label="Slide 3"></button>
-        </div>
-      </div>
-    </section>
+			<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
+			<label for="nav-toggle" class="hamburger" aria-hidden="true"><span></span><span></span><span></span></label>
 
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">Placement Snapshot</h2>
-        <p class="lead">Our students consistently perform across domains. Here are some quick highlights from the latest season.</p>
-        <div class="stats-grid">
-          <div class="stat-card">
-            <i class="fa-solid fa-user-graduate"></i>
-            <div>
-              <h3>650+ Students Placed</h3>
-              <p>Across undergraduate and postgraduate programs</p>
-            </div>
-          </div>
-          <div class="stat-card">
-            <i class="fa-solid fa-building"></i>
-            <div>
-              <h3>220+ Recruiters</h3>
-              <p>Including Fortune 500 and fast-growing startups</p>
-            </div>
-          </div>
-          <div class="stat-card">
-            <i class="fa-solid fa-indian-rupee-sign"></i>
-            <div>
-              <h3>₹21 LPA Highest</h3>
-              <p>With a strong average across departments</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+			<nav class="menu" aria-label="Primary">
+				<a href="index.html" class="active">Home</a>
+				<a href="about.html">About</a>
+				<a href="training.html">Training + Placement</a>
+				<a href="higher-studies.html">Higher Studies</a>
+				<a href="contact.html">Contact</a>
+				<a href="training.html" class="btn btn-sm btn-primary">Get Started</a>
+			</nav>
+		</div>
+	</header>
 
-    <section id="recruiters" class="section" aria-label="Our recruiters">
-      <div class="container">
-        <h2 class="section-title">Our Recruiters</h2>
-        <p class="lead">Trusted by industry leaders. A glimpse of organizations visiting our campus.</p>
-        <div class="logos-grid">
-          <div class="logo-card"><img alt="Company" src="https://dummyimage.com/140x60/edf2f7/222&text=Google" /></div>
-          <div class="logo-card"><img alt="Company" src="https://dummyimage.com/140x60/edf2f7/222&text=Amazon" /></div>
-          <div class="logo-card"><img alt="Company" src="https://dummyimage.com/140x60/edf2f7/222&text=Microsoft" /></div>
-          <div class="logo-card"><img alt="Company" src="https://dummyimage.com/140x60/edf2f7/222&text=TCS" /></div>
-          <div class="logo-card"><img alt="Company" src="https://dummyimage.com/140x60/edf2f7/222&text=Infosys" /></div>
-          <div class="logo-card"><img alt="Company" src="https://dummyimage.com/140x60/edf2f7/222&text=Accenture" /></div>
-          <div class="logo-card"><img alt="Company" src="https://dummyimage.com/140x60/edf2f7/222&text=Deloitte" /></div>
-          <div class="logo-card"><img alt="Company" src="https://dummyimage.com/140x60/edf2f7/222&text=Capgemini" /></div>
-          <div class="logo-card"><img alt="Company" src="https://dummyimage.com/140x60/edf2f7/222&text=Wipro" /></div>
-          <div class="logo-card"><img alt="Company" src="https://dummyimage.com/140x60/edf2f7/222&text=Cognizant" /></div>
-          <div class="logo-card"><img alt="Company" src="https://dummyimage.com/140x60/edf2f7/222&text=Flipkart" /></div>
-          <div class="logo-card"><img alt="Company" src="https://dummyimage.com/140x60/edf2f7/222&text=Adobe" /></div>
-        </div>
-      </div>
-    </section>
+	<main>
+		<section class="section hero">
+			<div class="container hero-grid">
+				<div class="hero-text">
+					<h1><span class="accent"> CampusPlacement </span> CareerConnect</h1>
+					<p>Your one portal to prepare, apply, and progress — from campus to career or higher education.</p>
+					<div class="cta-row">
+						<a href="training.html" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Explore Training</a>
+						<a href="higher-studies.html" class="btn btn-outline"><i class="fa-solid fa-graduation-cap"></i> Higher Studies</a>
+					</div>
+					<ul class="hero-highlights">
+						<li><i class="fa-solid fa-circle-check"></i> Drive alerts, eligibility, results — in real time</li>
+						<li><i class="fa-solid fa-circle-check"></i> Exam roadmaps, universities, scholarships</li>
+						<li><i class="fa-solid fa-circle-check"></i> Aptitude + coding practice with feedback</li>
+					</ul>
+				</div>
+				<div class="hero-media">
+					<img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1600&q=80" alt="Students using a career portal" />
+				</div>
+			</div>
+		</section>
 
-    <section class="section" aria-label="Upcoming placement drives">
-      <div class="container">
-        <h2 class="section-title">Upcoming Drives</h2>
-        <div class="grid-3">
-          <div class="card">
-            <h3>Tech Bootcamp</h3>
-            <p>Hands-on sessions on DS&A, system design, and interviews.</p>
-            <p class="badge">Sep 24 - Sep 28</p>
-          </div>
-          <div class="card">
-            <h3>Consulting Case Week</h3>
-            <p>Crack case interviews with alumni mentors and mock sessions.</p>
-            <p class="badge">Oct 02 - Oct 06</p>
-          </div>
-          <div class="card">
-            <h3>Core Engg Roundtable</h3>
-            <p>Mechanical, Civil, EEE placement strategy and resume reviews.</p>
-            <p class="badge">Oct 14</p>
-          </div>
-        </div>
-      </div>
-    </section>
+		<section class="section">
+			<div class="container">
+				<header class="section-header">
+					<h2>Why CampusPlacement ?</h2>
+					<p>We unify Training, Placements, and Higher Studies into one simple experience.</p>
+				</header>
 
-    <section class="section" aria-label="Resources">
-      <div class="container">
-        <h2 class="section-title">Resources</h2>
-        <div class="grid-3">
-          <div class="card">
-            <h3>Resume Templates</h3>
-            <p>ATS-friendly formats for freshers and experienced candidates.</p>
-            <a class="btn" href="tnp.html#resources">View</a>
-          </div>
-          <div class="card">
-            <h3>Interview Prep</h3>
-            <p>Curated question banks and mock interview schedules.</p>
-            <a class="btn" href="tnp.html#prep">Explore</a>
-          </div>
-          <div class="card">
-            <h3>Higher Studies</h3>
-            <p>Exams, scholarships, and top universities across the globe.</p>
-            <a class="btn" href="higher-studies.html">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+				<div class="features-grid">
+					<div class="feature-card"><i class="fa-solid fa-layer-group"></i><h3>Unified Platform</h3><p>Everything you need to move forward, without switching apps.</p></div>
+					<div class="feature-card"><i class="fa-solid fa-bell"></i><h3>Timely Alerts</h3><p>Drives, exams, deadlines — delivered when they matter most.</p></div>
+					<div class="feature-card"><i class="fa-solid fa-chart-line"></i><h3>Insights</h3><p>Placement trends and personalized recommendations tailored to you.</p></div>
+					<div class="feature-card"><i class="fa-solid fa-user-group"></i><h3>Alumni Connect</h3><p>Learn from those who’ve done it — mentorship and referrals.</p></div>
+					<div class="feature-card"><i class="fa-solid fa-robot"></i><h3>AI Career Tools</h3><p>Resume analyzer and skill guidance to sharpen your edge.</p></div>
+					<div class="feature-card"><i class="fa-solid fa-shield-heart"></i><h3>Privacy-First</h3><p>Secure by design and institution-ready.</p></div>
+				</div>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <div class="footer-brand">
-          <div class="logo"></div>
-          <div>
-            <strong>College T&P Cell</strong>
-            <div>Shaping futures with industry partnerships</div>
-          </div>
-        </div>
-        <p style="margin-top: 12px; max-width: 560px;">We collaborate with leading organizations to facilitate internships and placements while guiding students for higher education opportunities.</p>
-      </div>
-      <div>
-        <strong>Quick Links</strong>
-        <ul style="list-style: none; padding: 8px 0 0; margin: 0;">
-          <li><a class="btn" style="padding:6px 10px; display:inline-block; margin:4px 0;" href="tnp.html">T&amp;P</a></li>
-          <li><a class="btn" style="padding:6px 10px; display:inline-block; margin:4px 0;" href="higher-studies.html">Higher Studies</a></li>
-          <li><a class="btn" style="padding:6px 10px; display:inline-block; margin:4px 0;" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <strong>Contact</strong>
-        <div style="margin-top: 8px;">
-          <div><i class="fa fa-location-dot"></i> Campus Road, City</div>
-          <div><i class="fa fa-envelope"></i> tnp@college.edu</div>
-          <div><i class="fa fa-phone"></i> +91 98765 43210</div>
-        </div>
-      </div>
-    </div>
-    <div class="container footer-bottom">© <span id="year"></span> College T&P Cell. All rights reserved.</div>
-  </footer>
+				<div class="kpi-grid mt-24">
+					<div class="kpi"><strong>120+</strong><span>Hiring Partners</span></div>
+					<div class="kpi"><strong>500+</strong><span>Practice Sets</span></div>
+					<div class="kpi"><strong>95%</strong><span>Interview Ready</span></div>
+					<div class="kpi"><strong>30K+</strong><span>Students Supported</span></div>
+				</div>
+			</div>
+		</section>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  <script src="./script.js"></script>
+		<section class="section section-alt">
+			<div class="container">
+				<header class="section-header">
+					<h2>Featured Recruiters</h2>
+					<p>Some of the organizations that hire from our campus.</p>
+				</header>
+				<div class="logo-wall">
+					<div class="logo-card"><img alt="Google" src="https://dummyimage.com/120x36/eff2ff/223&text=Google" /></div>
+					<div class="logo-card"><img alt="Amazon" src="https://dummyimage.com/120x36/eff2ff/223&text=Amazon" /></div>
+					<div class="logo-card"><img alt="Microsoft" src="https://dummyimage.com/120x36/eff2ff/223&text=Microsoft" /></div>
+					<div class="logo-card"><img alt="TCS" src="https://dummyimage.com/120x36/eff2ff/223&text=TCS" /></div>
+					<div class="logo-card"><img alt="Infosys" src="https://dummyimage.com/120x36/eff2ff/223&text=Infosys" /></div>
+					<div class="logo-card"><img alt="Accenture" src="https://dummyimage.com/120x36/eff2ff/223&text=Accenture" /></div>
+					<div class="logo-card"><img alt="Deloitte" src="https://dummyimage.com/120x36/eff2ff/223&text=Deloitte" /></div>
+					<div class="logo-card"><img alt="Wipro" src="https://dummyimage.com/120x36/eff2ff/223&text=Wipro" /></div>
+					<div class="logo-card"><img alt="Cognizant" src="https://dummyimage.com/120x36/eff2ff/223&text=Cognizant" /></div>
+					<div class="logo-card"><img alt="Adobe" src="https://dummyimage.com/120x36/eff2ff/223&text=Adobe" /></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<header class="section-header">
+					<h2>Get started fast</h2>
+					<p>Shortcuts to the most-used actions across the portal.</p>
+				</header>
+
+				<div class="cards">
+					<article class="card">
+						<i class="fa-solid fa-briefcase card-icon"></i>
+						<h3>Upcoming Drives</h3>
+						<p>Check eligibility and apply in minutes.</p>
+						<a class="link" href="training.html">View drives <i class="fa-solid fa-arrow-right"></i></a>
+					</article>
+					<article class="card">
+						<i class="fa-solid fa-code card-icon"></i>
+						<h3>Coding Practice</h3>
+						<p>Daily problems with hints and solutions.</p>
+						<a class="link" href="training.html">Start practicing <i class="fa-solid fa-arrow-right"></i></a>
+					</article>
+					<article class="card">
+						<i class="fa-solid fa-graduation-cap card-icon"></i>
+						<h3>Exam Roadmaps</h3>
+						<p>GATE, GRE, CAT, TOEFL timelines and tips.</p>
+						<a class="link" href="higher-studies.html">See roadmaps <i class="fa-solid fa-arrow-right"></i></a>
+					</article>
+				</div>
+
+				<div class="banner">
+					<img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1600&q=80" alt="Students collaborating" />
+					<div class="banner-text">Join CampusPlacement — Train. Apply. Advance.</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-alt">
+			<div class="container">
+				<header class="section-header">
+					<h2>Gallery</h2>
+					<p>Campus life, workshops, and placement moments.</p>
+				</header>
+				<div class="gallery-grid">
+					<img alt="Workshop" src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1200&q=80" />
+					<img alt="Career fair" src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80" />
+					<img alt="Hackathon" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" />
+					<img alt="Seminar" src="https://images.unsplash.com/photo-1503428593586-e225b39bddfe?auto=format&fit=crop&w=1200&q=80" />
+					<img alt="Convocation" src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1200&q=80" />
+					<img alt="Teamwork" src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=1200&q=80" />
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<header class="section-header">
+					<h2>Student stories</h2>
+					<p>Hear from students who made the leap.</p>
+				</header>
+				<div class="testimonials">
+					<div class="quote"><p>“The mock interviews and coding sprints helped me crack my first offer.”</p><div class="row"><img class="avatar" alt="Student" src="https://i.pravatar.cc/100?img=12" /><div><strong>Priya</strong><div class="tiny">CSE, 2025</div></div></div></div>
+					<div class="quote"><p>“Drive alerts were super timely — I never missed a deadline.”</p><div class="row"><img class="avatar" alt="Student" src="https://i.pravatar.cc/100?img=3" /><div><strong>Rohit</strong><div class="tiny">ECE, 2024</div></div></div></div>
+					<div class="quote"><p>“Roadmaps and mentorship simplified my GRE + MS journey.”</p><div class="row"><img class="avatar" alt="Student" src="https://i.pravatar.cc/100?img=24" /><div><strong>Ananya</strong><div class="tiny">EEE, 2023</div></div></div></div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-grid">
+			<div class="foot-brand">
+				<img src="images/logo.png" alt="CampusPlacement logo" class="logo small" />
+				<div><strong>CampusPlacement</strong><p>CareerConnect • Train. Apply. Advance.</p></div>
+			</div>
+			<nav class="foot-links">
+				<a href="about.html">About</a>
+				<a href="training.html">Training</a>
+				<a href="higher-studies.html">Higher Studies</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+			<div class="foot-social">
+				<a aria-label="LinkedIn" href="#"><i class="fa-brands fa-linkedin"></i></a>
+				<a aria-label="X" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+				<a aria-label="YouTube" href="#"><i class="fa-brands fa-youtube"></i></a>
+			</div>
+		</div>
+		<div class="container tiny">© <span id="year"></span> CampusPlacement. All rights reserved.</div>
+	</footer>
+
+	<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
