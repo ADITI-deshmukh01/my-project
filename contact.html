@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Contact — CampusPlacement</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<header class="site-header">
+		<div class="container nav">
+			<a href="index.html" class="brand">
+				<img src="images/logo.png" alt="CampusPlacement logo" class="logo" />
+				<span class="brand-text">CampusPlacement</span>
+			</a>
+
+			<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
+			<label for="nav-toggle" class="hamburger" aria-hidden="true"><span></span><span></span><span></span></label>
+
+			<nav class="menu" aria-label="Primary">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="training.html">Training + Placement</a>
+				<a href="higher-studies.html">Higher Studies</a>
+				<a href="contact.html" class="active">Contact</a>
+				<a href="contact.html" class="btn btn-sm btn-primary">Request Access</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="container breadcrumb" aria-label="Breadcrumb">
+			<a href="index.html">Home</a>
+			<span class="sep">/</span>
+			<span>Contact</span>
+		</div>
+
+		<section class="section hero">
+			<div class="container hero-grid">
+				<div class="hero-text">
+					<h1>Training & Placement Cell — Contact</h1>
+					<p>Institutions, recruiters, and students — our T&P team is here to help you onboard, recruit, and succeed.</p>
+					<div class="chips mt-8">
+						<span class="chip">Institutions</span>
+						<span class="chip">Recruiters</span>
+						<span class="chip">Students</span>
+					</div>
+					<div class="kpi-grid mt-16">
+						<div class="kpi"><strong>50+</strong><span>Institutes</span></div>
+						<div class="kpi"><strong>120+</strong><span>Hiring Partners</span></div>
+						<div class="kpi"><strong>30k+</strong><span>Students</span></div>
+						<div class="kpi"><strong>4.9/5</strong><span>Support Rating</span></div>
+					</div>
+				</div>
+				<div class="hero-media">
+					<img src="https://images.unsplash.com/photo-1554774853-b415df9eeb92?auto=format&fit=crop&w=1600&q=80" alt="Support" />
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-alt">
+			<div class="container">
+				<div class="notice">
+					<strong>Official communication:</strong> We never ask for passwords or fees for drive registrations. Report suspicious messages to support immediately.
+				</div>
+
+				<div class="features-grid mt-16">
+					<div class="feature-card">
+						<i class="fa-solid fa-building"></i>
+						<h3>Office</h3>
+						<p>T&P Cell, Main Administrative Block, Your Campus, Your City, India</p>
+					</div>
+					<div class="feature-card">
+						<i class="fa-solid fa-clock"></i>
+						<h3>Office Hours</h3>
+						<p>Mon–Fri: 9:00 AM – 6:00 PM • Sat: 10:00 AM – 2:00 PM</p>
+					</div>
+					<div class="feature-card">
+						<i class="fa-solid fa-headset"></i>
+						<h3>Support</h3>
+						<p>Email: support@CampusPlacement.careers • Phone: +91 98765 43210</p>
+					</div>
+				</div>
+
+				<div class="split mt-24">
+					<div>
+						<header class="section-header left">
+							<h2>Send a message</h2>
+							<p>We typically reply within 24 hours.</p>
+						</header>
+
+						<form class="contact-form" onsubmit="return false" aria-label="Contact form">
+							<div class="form-row">
+								<div class="field"><label for="name">Full Name</label><input id="name" type="text" placeholder="Your name" required /></div>
+								<div class="field"><label for="email">Email</label><input id="email" type="email" placeholder="you@example.com" required /></div>
+							</div>
+							<div class="form-row">
+								<div class="field"><label for="role">I am a</label>
+									<select id="role" required><option value="">Select role</option><option>Student</option><option>Recruiter</option><option>University</option></select>
+								</div>
+								<div class="field"><label for="subject">Subject</label><input id="subject" type="text" placeholder="Access / Partnership / Query" /></div>
+							</div>
+							<div class="field"><label for="message">Message</label><textarea id="message" rows="6" placeholder="Tell us how we can help"></textarea></div>
+							<button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+						</form>
+					</div>
+
+					<div>
+						<header class="section-header left"><h2>Help topics</h2><p>Quick answers to common questions.</p></header>
+						<div class="faq">
+							<details><summary>How do institutions onboard?</summary><p>We offer guided setup, student data import, and admin training. Get in touch for a tailored rollout plan.</p></details>
+							<details><summary>Do you support SSO?</summary><p>Yes, we support SSO and role-based access controls for students, recruiters, and staff.</p></details>
+							<details><summary>Is data export available?</summary><p>Admins can export test results, placement analytics, and drive records securely at any time.</p></details>
+						</div>
+
+						<div class="mt-24">
+							<header class="section-header left"><h2>Locate us</h2><p>Visit the T&P Cell during office hours.</p></header>
+							<div class="cards">
+								<article class="card">
+									<i class="fa-solid fa-location-dot card-icon"></i>
+									<h3>Address</h3>
+									<p>Main Administrative Block, Your Campus, Your City, India</p>
+								</article>
+								<article class="card">
+									<i class="fa-solid fa-user-shield card-icon"></i>
+									<h3>Visitor Policy</h3>
+									<p>Carry a valid ID. Check in at the reception for a visitor pass.</p>
+								</article>
+								<article class="card">
+									<i class="fa-solid fa-calendar-check card-icon"></i>
+									<h3>Appointments</h3>
+									<p>Schedule mentor sessions and recruiter meetings via the portal.</p>
+								</article>
+							</div>
+						</div>
+					</div>
+
+					<div class="mt-24 partners-strip" aria-label="Hiring partners">
+						<span class="partner-pill">TechNova</span>
+						<span class="partner-pill">DataBridge</span>
+						<span class="partner-pill">CloudQuill</span>
+						<span class="partner-pill">AlgoWorks</span>
+						<span class="partner-pill">InnoSoft</span>
+					</div>
+
+					<div class="banner mt-24">
+						<img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=1600&q=80" alt="Contact banner" />
+						<div class="banner-text">Partner with CampusPlacement to power your T&P Cell.</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-grid">
+			<div class="foot-brand">
+				<img src="images/logo.png" alt="CampusPlacement logo" class="logo small" />
+				<div><strong>CampusPlacement</strong><p>Training & Placement Portal • Prepare. Apply. Advance.</p></div>
+			</div>
+			<nav class="foot-links">
+				<a href="about.html">About</a>
+				<a href="training.html">Training</a>
+				<a href="higher-studies.html">Higher Studies</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+			<div class="foot-social">
+				<a aria-label="LinkedIn" href="#"><i class="fa-brands fa-linkedin"></i></a>
+				<a aria-label="X" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+				<a aria-label="YouTube" href="#"><i class="fa-brands fa-youtube"></i></a>
+			</div>
+		</div>
+		<div class="container tiny">© <span id="year"></span> CampusPlacement. All rights reserved.</div>
+	</footer>
+
+	<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
+
