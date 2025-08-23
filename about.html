@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Cummins CEN</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="header">
+    <div class="container navbar">
+      <a href="/index.html" class="brand"><span class="logo">CC</span><span>Cummins College of Engineering Nagpur</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/index.html">Home</a>
+        <a href="/about.html" class="active">About</a>
+        <a href="/tnp.html">T&P</a>
+        <a href="/higher-studies.html">Higher Studies</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <button class="mobile-toggle btn ghost" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+    </div>
+    <div class="container mobile-menu" id="mobile-menu" hidden>
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/tnp.html">T&P</a>
+      <a href="/higher-studies.html">Higher Studies</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">About Us</h1>
+        <p class="section-subtitle">Our mission is to nurture innovative engineers and leaders.</p>
+        <div class="grid grid-2">
+          <div class="card">
+            <div class="title">Mission</div>
+            <p>To provide high-quality engineering education, foster research and innovation, and develop socially responsible professionals ready for global challenges.</p>
+          </div>
+          <div class="card">
+            <div class="title">Vision</div>
+            <p>To be a premier engineering institution known for excellence, inclusivity, and strong industry collaboration.</p>
+          </div>
+        </div>
+        <div class="grid grid-3 mt-24">
+          <div class="card center">
+            <div class="title">Departments</div>
+            <p class="muted">CSE, ECE, Mechanical, Electrical, Civil, AI/ML, Data Science.</p>
+          </div>
+          <div class="card center">
+            <div class="title">Collaborations</div>
+            <p class="muted">MoUs with leading companies and universities for internships and research.</p>
+          </div>
+          <div class="card center">
+            <div class="title">Facilities</div>
+            <p class="muted">Modern labs, incubation centre, library, and innovation hubs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container grid grid-3">
+      <div>
+        <div class="brand"><span class="logo">CC</span><span>Cummins CEN</span></div>
+        <p class="small">Committed to student success through skill development and opportunities.</p>
+      </div>
+      <div>
+        <div class="title">Explore</div>
+        <p class="mt-8"><a href="/tnp.html">T&P Cell</a></p>
+        <p><a href="/higher-studies.html">Higher Studies</a></p>
+      </div>
+      <div>
+        <div class="title">Contact</div>
+        <p class="small">Email: info@ccen.ac.in</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.querySelector('.mobile-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle?.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      if (menu.hasAttribute('hidden')) menu.removeAttribute('hidden'); else menu.setAttribute('hidden', '');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Higher Studies - Cummins CEN</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="header">
+    <div class="container navbar">
+      <a href="/index.html" class="brand"><span class="logo">CC</span><span>Cummins College of Engineering Nagpur</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/tnp.html">T&P</a>
+        <a href="/higher-studies.html" class="active">Higher Studies</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <button class="mobile-toggle btn ghost" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+    </div>
+    <div class="container mobile-menu" id="mobile-menu" hidden>
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/tnp.html">T&P</a>
+      <a href="/higher-studies.html">Higher Studies</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">Higher Studies Cell</h1>
+        <p class="section-subtitle">Guidance for MS, MTech, MBA, and PhD admissions in India and abroad.</p>
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="title">Entrance Exams</div>
+            <ul>
+              <li>GATE (India)</li>
+              <li>CAT (India)</li>
+              <li>GRE (US)</li>
+              <li>IELTS/TOEFL (English proficiency)</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="title">Documents & Prep</div>
+            <ul>
+              <li>SOP and LOR guidance</li>
+              <li>Profile building and research</li>
+              <li>Scholarship/assistantship info</li>
+              <li>Application timelines</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="title">Workshops</div>
+            <p>Sessions on university selection, funding, and visa processes with alumni mentors.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2 class="section-title">Popular Universities</h2>
+        <p class="section-subtitle">Add logos or photos for each university.</p>
+        <div class="gallery">
+          <img src="/assets/universities/mit.png" alt="MIT" />
+          <img src="/assets/universities/stanford.png" alt="Stanford" />
+          <img src="/assets/universities/cmu.png" alt="CMU" />
+          <img src="/assets/universities/iisc.png" alt="IISc" />
+          <img src="/assets/universities/iitb.png" alt="IIT Bombay" />
+          <img src="/assets/universities/iitm.png" alt="IIT Madras" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Alumni Spotlight</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="title">Jane Doe</div>
+            <p class="muted">MS CS, Carnegie Mellon University</p>
+            <p>Researcher in AI and Robotics. Received full scholarship.</p>
+          </div>
+          <div class="card">
+            <div class="title">Rahul Sharma</div>
+            <p class="muted">MTech, IIT Bombay</p>
+            <p>Focus on Microelectronics. Co-authored IEEE publications.</p>
+          </div>
+          <div class="card">
+            <div class="title">Aisha Khan</div>
+            <p class="muted">MBA, IIM Ahmedabad</p>
+            <p>Product Manager in fintech. Led multiple startup initiatives.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container grid grid-3">
+      <div>
+        <div class="brand"><span class="logo">CC</span><span>Cummins CEN</span></div>
+        <p class="small">Reach out for personalized higher studies mentoring.</p>
+      </div>
+      <div>
+        <div class="title">Resources</div>
+        <p class="mt-8"><a href="#">SOP Samples</a></p>
+        <p><a href="#">Scholarship Portals</a></p>
+      </div>
+      <div>
+        <div class="title">Contact</div>
+        <p class="small">higherstudies@ccen.ac.in</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.querySelector('.mobile-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle?.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      if (menu.hasAttribute('hidden')) menu.removeAttribute('hidden'); else menu.setAttribute('hidden', '');
+    });
+  </script>
+</body>
+</html>
