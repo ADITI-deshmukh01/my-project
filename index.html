@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cummins College of Engineering Nagpur - Training & Placement</title>
+  <meta name="description" content="Official Training & Placement and Higher Studies portal for Cummins College of Engineering Nagpur." />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="icon" href="/assets/images/favicon.png" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="header">
+    <div class="container navbar">
+      <a href="/index.html" class="brand"><span class="logo">CC</span><span>Cummins College of Engineering Nagpur</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/index.html" class="active">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/tnp.html">T&P</a>
+        <a href="/higher-studies.html">Higher Studies</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <button class="mobile-toggle btn ghost" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+    </div>
+    <div class="container mobile-menu" id="mobile-menu" hidden>
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/tnp.html">T&P</a>
+      <a href="/higher-studies.html">Higher Studies</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-wrap">
+        <div>
+          <h1>Training, Placement & Higher Studies</h1>
+          <p>Empowering students with industry opportunities, internships, placements, and world-class higher education guidance.</p>
+          <div class="mt-16">
+            <a href="/tnp.html" class="btn primary">Explore T&P</a>
+            <a href="/higher-studies.html" class="btn secondary">Higher Studies</a>
+          </div>
+          <div class="stats mt-16">
+            <div class="stat"><strong>95%+</strong> Placement Rate</div>
+            <div class="stat"><strong>150+ </strong> Recruiters</div>
+            <div class="stat"><strong>₹22 LPA</strong> Highest CTC</div>
+            <div class="stat"><strong>200+</strong> Internships</div>
+          </div>
+        </div>
+        <div>
+          <div class="gallery">
+            <img src="/assets/images/campus-1.jpg" alt="Campus view" />
+            <img src="/assets/images/campus-2.jpg" alt="Student activity" />
+            <img src="/assets/images/campus-3.jpg" alt="Laboratory" />
+            <img src="/assets/images/campus-4.jpg" alt="Recruitment drive" />
+            <img src="/assets/images/campus-5.jpg" alt="Workshop" />
+            <img src="/assets/images/campus-6.jpg" alt="Convocation" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2 class="section-title">Highlights</h2>
+        <p class="section-subtitle">Key offerings that prepare students for successful careers.</p>
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="title">Career Readiness</div>
+            <div class="muted">Aptitude, coding, and soft skills training by experts.</div>
+          </div>
+          <div class="card">
+            <div class="title">Industry Connect</div>
+            <div class="muted">Regular talks, hackathons, and live projects with companies.</div>
+          </div>
+          <div class="card">
+            <div class="title">Global Education</div>
+            <div class="muted">Admissions guidance, scholarships, and exam prep for MS/MTech/PhD.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Top Recruiters</h2>
+        <p class="section-subtitle">Showcase your recruiter logos here.</p>
+        <div class="gallery">
+          <img src="/assets/recruiters/google.png" alt="Google" />
+          <img src="/assets/recruiters/microsoft.png" alt="Microsoft" />
+          <img src="/assets/recruiters/amazon.png" alt="Amazon" />
+          <img src="/assets/recruiters/tcs.png" alt="TCS" />
+          <img src="/assets/recruiters/infosys.png" alt="Infosys" />
+          <img src="/assets/recruiters/wipro.png" alt="Wipro" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container grid grid-3">
+      <div>
+        <div class="brand"><span class="logo">CC</span><span>Cummins CEN</span></div>
+        <p class="small">Driving excellence in engineering education through innovation, research, and strong industry collaboration.</p>
+      </div>
+      <div>
+        <div class="title">Quick Links</div>
+        <p class="mt-8"><a href="/tnp.html">T&P Cell</a></p>
+        <p><a href="/higher-studies.html">Higher Studies</a></p>
+        <p><a href="/contact.html">Contact</a></p>
+      </div>
+      <div>
+        <div class="title">Contact</div>
+        <p class="small">Address line, Nagpur, Maharashtra, India</p>
+        <p class="small">Email: tpo@ccen.ac.in</p>
+        <p class="small">Phone: +91-712-000000</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.mobile-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle?.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      if (menu.hasAttribute('hidden')) menu.removeAttribute('hidden'); else menu.setAttribute('hidden', '');
+    });
+  </script>
+</body>
+</html>
