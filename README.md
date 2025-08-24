@@ -6,19 +6,19 @@ It includes a clean structure with navigation between pages, images, and styling
 
 ## 📂 Project Structure:-
 
-1── index.html # Main homepage
-2── about.html # About Us page
-4── contact.html # Contact page
-5── training.html # Training & Placement page
-6── higher-studies.html # Higher Studies page
+|── index.html # Main homepage
+|── about.html # About Us page
+|── contact.html # Contact page
+|── training.html # Training & Placement page
+|── higher-studies.html # Higher Studies page
 
-7── css/
+|── css/
 │ └── style.css # CSS file for styling
 │
-8── images/
-9── logo.png
-10── banner.jpg
-11── other-images...
+|── images/
+|── logo.png
+|── banner.jpg
+|── other-images...
 
 
 ## 🌟 Features
