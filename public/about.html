@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>About — Nextstep</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<header class="site-header">
+		<div class="container nav">
+			<a href="index.html" class="brand">
+				<img src="logo.png" alt="Nextsteplogo" class="logo" />
+				<span class="brand-text">Nextstep</span>
+			</a>
+
+			<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
+			<label for="nav-toggle" class="hamburger" aria-hidden="true"><span></span><span></span><span></span></label>
+
+			<nav class="menu" aria-label="Primary">
+				<a href="index.html">Home</a>
+				<a href="about.html" class="active">About</a>
+				<a href="training.html">Training + Placement</a>
+				<a href="higher-studies.html">Higher Studies</a>
+				<a href="contact.html">Contact</a>
+				
+				<!-- Authentication Buttons -->
+				<div class="auth-buttons" id="authButtons">
+					<button class="btn btn-outline btn-sm" onclick="app.showLoginModal()">Login</button>
+					<button class="btn btn-primary btn-sm" onclick="app.showRegisterModal()">Register</button>
+				</div>
+				
+				<!-- User Menu -->
+				<div class="user-menu" id="userMenu" style="display: none;">
+					<button class="user-menu-toggle" onclick="app.toggleUserMenu()">
+						<i class="fas fa-user-circle"></i>
+						<span id="userName">User</span>
+						<i class="fas fa-chevron-down"></i>
+					</button>
+					<div class="dropdown-menu" id="dropdownMenu">
+						<a href="#" onclick="app.loadDashboard()"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+						<a href="#" onclick="app.showProfile()"><i class="fas fa-user"></i> Profile</a>
+						<a href="#" onclick="app.logout()"><i class="fas fa-sign-out-alt"></i> Logout</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="section hero">
+			<div class="container hero-grid">
+				<div class="hero-text">
+					<h1>About <span class="accent">Nextstep</span></h1>
+					<p>We’re building a unified career support system that reduces friction and increases outcomes for students and institutions.</p>
+					<div class="chips mt-8">
+						<span class="chip">Student-first</span>
+						<span class="chip">Outcome-driven</span>
+						<span class="chip">Privacy-respecting</span>
+					</div>
+				</div>
+				<div class="hero-media">
+					<img src="aboutpage.jpg" alt="Mission and team" />
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<header class="section-header">
+					<h2>Our mission, vision, and values</h2>
+					<p>Clear goals keep us focused on what matters — your next step.</p>
+				</header>
+
+				<div class="cards">
+					<article class="card">
+						<i class="fa-solid fa-bullseye card-icon"></i>
+						<h3>Mission</h3>
+						<p>To develop technically and academically sound women professionals, having strong work-ethics and good human-being characteristics.</p>
+					</article>
+					<article class="card">
+						<i class="fa-solid fa-eye card-icon"></i>
+						<h3>Vision</h3>
+						<p>Empowered women play an important role in building society and nation. Empowerment and enrichment of women professionals through education; innovative training of life skills and job skills.</p>
+					</article>
+					<article class="card">
+						<i class="fa-solid fa-handshake-angle card-icon"></i>
+						<h3>Values</h3>
+						<p>
+							Give due respect to all students and staff.<br>
+							Enhance professionalism with good human values.<br>
+							Promote team spirit and healthy competition.
+						</p>
+					</article>
+				</div>
+
+				<div class="kpi-grid mt-24">
+					<div class="kpi"><strong>50+</strong><span>Institutions Served</span></div>
+					<div class="kpi"><strong>2,000+</strong><span>Alumni Mentors</span></div>
+					<div class="kpi"><strong>10+</strong><span>Career Modules</span></div>
+					<div class="kpi"><strong>99.9%</strong><span>Uptime</span></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-alt">
+			<div class="container">
+				<header class="section-header">
+					<h2>Leadership & partners</h2>
+					<p>Built with educators, recruiters, and technologists.</p>
+				</header>
+
+				<div class="testimonials">
+					<div class="quote">
+						<p>
+							“Er. Manish Raut<br>
+							Training and Placement Officer<br>
+							Email: manish.raut@cumminscollege.edu.in<br>
+							Mobile: +91 9881716620 / +91 8411915585”
+						</p>
+						<strong>Head, T&P Cell</strong><span class="badge mt-8">Institution Partner</span>
+					</div>
+					<div class="quote">
+						<p>Dr. Prasanna Mahankar — Mech Dept Incharge</p>
+						<p>Er. Abhilasha Borkar — CE Dept Incharge</p>
+						<p>Er. Tushar Joshi — ETC Dept Incharge</p>
+						<p>Prof. Rashmi Deshpande — Allied Science Dept Incharge</p>
+						<strong>Placement Committee</strong><span class="badge mt-8">Hiring Partner</span>
+					</div>
+					<div class="quote">
+						<p>Kalyani Kadwe</p>
+						<p>Yukta Kuhike</p>
+						<p>Radhika Naitam</p>
+						<p>Tanaya Khond</p>
+						<p>Sayli Bhongade</p>
+						<strong>Alumni</strong><span class="badge mt-8">Alumni Mentor</span>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- 🔹 Footer -->
+	<footer class="site-footer">
+		<div class="container footer-grid">
+			<div>
+				<h4>About CCoEW</h4>
+				<p>Cummins College of Engineering for Women (CCoEW), Nagpur, established in 2010 by MKSSS, is NAAC A+ accredited and affiliated to RTM Nagpur University. Empowering women engineers through academic excellence, research, and holistic development.</p>
+			</div>
+			<div>
+				<h4>Courses & Admissions</h4>
+				<p>B.Tech Programs:<br>• Computer Engineering<br>• Mechanical Engineering<br>• E&TC Engineering<br><br>Admission via MHT-CET / JEE Main</p>
+			</div>
+			<div>
+				<h4>Contact Us</h4>
+				<p>📞 +91 94xxxxxxxx<br>📞 +91 80xxxxxxxx<br>📞 +91 77xxxxxxxx<br>📞 +91 84xxxxxxxx<br><br>✉ <a href="mailto:office@cumminscollege.edu.in">office@cumminscollege.edu.in</a></p>
+			</div>
+			<div>
+				<h4>Follow Us</h4>
+				<p><a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a> | <a href="#">X</a></p>
+			</div>
+		</div>
+		<div class="copy">© 2025 Cummins College of Engineering for Women, Nagpur</div>
+	</footer>
+
+	<!-- AI Career Assistant -->
+	<div class="chatbot-container" id="chatbotContainer">
+		<div class="chatbot-header" onclick="app.toggleChatbot()">
+			<i class="fas fa-robot"></i>
+			<span>AI Career Assistant</span>
+			<i class="fas fa-chevron-up" id="chatbotToggle"></i>
+		</div>
+		<div class="chatbot-body" id="chatbotBody" style="display: none;">
+			<div class="chat-messages" id="chatMessages">
+				<div class="message bot-message">
+					<div class="message-content">
+						<p>Hello! I'm your AI Career Assistant. How can I help you with your career goals today?</p>
+					</div>
+				</div>
+			</div>
+			<div class="chat-input">
+				<input type="text" id="chatInput" placeholder="Ask me about placements, higher studies, or career guidance..." />
+				<button onclick="app.sendMessage()"><i class="fas fa-paper-plane"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Login Modal -->
+	<div class="modal" id="loginModal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3>Login</h3>
+				<button class="close" onclick="app.closeModal('loginModal')">&times;</button>
+			</div>
+			<form id="loginForm" onsubmit="app.handleLogin(event)">
+				<div class="form-group">
+					<label for="loginEmail">Email</label>
+					<input type="email" id="loginEmail" required />
+				</div>
+				<div class="form-group">
+					<label for="loginPassword">Password</label>
+					<input type="password" id="loginPassword" required />
+				</div>
+				<button type="submit" class="btn btn-primary">Login</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Register Modal -->
+	<div class="modal" id="registerModal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3>Register</h3>
+				<button class="close" onclick="app.closeModal('registerModal')">&times;</button>
+			</div>
+			<form id="registerForm" onsubmit="app.handleRegister(event)">
+				<div class="form-row">
+					<div class="form-group">
+						<label for="regFirstName">First Name</label>
+						<input type="text" id="regFirstName" required />
+					</div>
+					<div class="form-group">
+						<label for="regLastName">Last Name</label>
+						<input type="text" id="regLastName" required />
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="regEmail">Email</label>
+					<input type="email" id="regEmail" required />
+				</div>
+				<div class="form-group">
+					<label for="regPassword">Password</label>
+					<input type="password" id="regPassword" required />
+				</div>
+				<div class="form-group">
+					<label for="regRole">Role</label>
+					<select id="regRole" onchange="app.toggleStudentFields()" required>
+						<option value="">Select Role</option>
+						<option value="student">Student</option>
+						<option value="faculty">Faculty</option>
+						<option value="placement_officer">Placement Officer</option>
+					</select>
+				</div>
+				<div class="student-fields" id="studentFields" style="display: none;">
+					<div class="form-group">
+						<label for="regStudentId">Student ID</label>
+						<input type="text" id="regStudentId" />
+					</div>
+					<div class="form-group">
+						<label for="regDepartment">Department</label>
+						<select id="regDepartment">
+							<option value="">Select Department</option>
+							<option value="Computer Engineering">Computer Engineering</option>
+							<option value="Mechanical Engineering">Mechanical Engineering</option>
+							<option value="E&TC Engineering">E&TC Engineering</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="regYear">Year</label>
+						<select id="regYear">
+							<option value="">Select Year</option>
+							<option value="1">1st Year</option>
+							<option value="2">2nd Year</option>
+							<option value="3">3rd Year</option>
+							<option value="4">4th Year</option>
+						</select>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary">Register</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Notification Container -->
+	<div id="notificationContainer"></div>
+
+	<!-- Scripts -->
+	<link rel="stylesheet" href="app.css" />
+	<script src="app.js"></script>
+	<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

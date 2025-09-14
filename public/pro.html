@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusPlacement — CareerConnect</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+        }
+        .poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+        .btn-primary {
+            @apply bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md;
+        }
+        .btn-secondary {
+            @apply bg-white hover:bg-gray-100 text-indigo-600 font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 border border-indigo-600 shadow-md;
+        }
+        .card {
+            @apply bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2;
+        }
+        .feature-icon {
+            @apply text-indigo-600 text-4xl mb-4;
+        }
+        .kpi-stat {
+            @apply text-indigo-600 text-5xl font-bold poppins mb-2;
+        }
+        .kpi-label {
+            @apply text-gray-600 font-medium text-lg;
+        }
+        section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md poppins sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600" onclick="showPage('home')">
+                Campus<span class="text-indigo-800">Placement</span>
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#home" class="text-gray-600 hover:text-indigo-600 transition-colors" onclick="showPage('home')">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition-colors" onclick="showPage('about')">About</a>
+                <a href="#training" class="text-gray-600 hover:text-indigo-600 transition-colors" onclick="showPage('training')">Training + Placement</a>
+                <a href="#studies" class="text-gray-600 hover:text-indigo-600 transition-colors" onclick="showPage('studies')">Higher Studies</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition-colors" onclick="showPage('contact')">Contact</a>
+                <button class="btn-primary" onclick="showPage('login')">Login</button>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-gray-600 text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-4">
+            <a href="#home" class="block py-2 px-6 text-gray-600 hover:bg-gray-100" onclick="showPage('home')">Home</a>
+            <a href="#about" class="block py-2 px-6 text-gray-600 hover:bg-gray-100" onclick="showPage('about')">About</a>
+            <a href="#training" class="block py-2 px-6 text-gray-600 hover:bg-gray-100" onclick="showPage('training')">Training + Placement</a>
+            <a href="#studies" class="block py-2 px-6 text-gray-600 hover:bg-gray-100" onclick="showPage('studies')">Higher Studies</a>
+            <a href="#contact" class="block py-2 px-6 text-gray-600 hover:bg-gray-100" onclick="showPage('contact')">Contact</a>
+            <button class="w-full btn-primary mt-4 mx-auto" onclick="showPage('login')">Login</button>
+        </div>
+    </header>
+
+    <!-- Home Page -->
+    <main id="home" class="active">
+        <!-- Hero Section -->
+        <section class="bg-indigo-50 py-20 poppins">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-indigo-800 mb-4 leading-tight">Your Future Starts Here.</h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Connecting Students with Opportunities, One Career at a Time.</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button class="btn-primary">Explore Opportunities</button>
+                    <button class="btn-secondary">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold poppins text-center mb-12">Key Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="card text-center">
+                        <i class="feature-icon fas fa-bell"></i>
+                        <h3 class="text-xl font-semibold poppins mb-2">Drive Alerts</h3>
+                        <p class="text-gray-500">Stay updated on all upcoming placement drives and interviews.</p>
+                    </div>
+                    <div class="card text-center">
+                        <i class="feature-icon fas fa-cogs"></i>
+                        <h3 class="text-xl font-semibold poppins mb-2">AI Tools</h3>
+                        <p class="text-gray-500">Resume builders and interview practice powered by AI.</p>
+                    </div>
+                    <div class="card text-center">
+                        <i class="feature-icon fas fa-user-tie"></i>
+                        <h3 class="text-xl font-semibold poppins mb-2">Alumni Connect</h3>
+                        <p class="text-gray-500">Network with successful alumni in your field.</p>
+                    </div>
+                    <div class="card text-center">
+                        <i class="feature-icon fas fa-chart-line"></i>
+                        <h3 class="text-xl font-semibold poppins mb-2">Progress Tracker</h3>
+                        <p class="text-gray-500">Monitor your preparation with personalized dashboards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold poppins text-center mb-12">Our Impact</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-6 rounded-2xl bg-indigo-50">
+                        <div class="kpi-stat">2000+</div>
+                        <div class="kpi-label">Students Supported</div>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-indigo-50">
+                        <div class="kpi-stat">500+</div>
+                        <div class="kpi-label">Practice Sets</div>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-indigo-50">
+                        <div class="kpi-stat">150+</div>
+                        <div class="kpi-label">Companies Visited</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Access Cards -->
+        <section class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold poppins text-center mb-12">Quick Access</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="card text-center">
+                        <i class="feature-icon fas fa-calendar-alt"></i>
+                        <h3 class="text-xl font-semibold poppins mb-2">Upcoming Drives</h3>
+                        <p class="text-gray-500">View the schedule for all campus recruitment drives.</p>
+                        <a href="#" class="mt-4 inline-block text-indigo-600 hover:underline">View Schedule &rarr;</a>
+                    </div>
+                    <div class="card text-center">
+                        <i class="feature-icon fas fa-code"></i>
+                        <h3 class="text-xl font-semibold poppins mb-2">Coding Practice</h3>
+                        <p class="text-gray-500">Sharpen your skills with a variety of coding challenges.</p>
+                        <a href="#" class="mt-4 inline-block text-indigo-600 hover:underline">Start Practicing &rarr;</a>
+                    </div>
+                    <div class="card text-center">
+                        <i class="feature-icon fas fa-graduation-cap"></i>
+                        <h3 class="text-xl font-semibold poppins mb-2">Exam Roadmaps</h3>
+                        <p class="text-gray-500">Detailed guides for competitive exams and interviews.</p>
+                        <a href="#" class="mt-4 inline-block text-indigo-600 hover:underline">Explore Roadmaps &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- About Page -->
+    <section id="about" class="py-20 poppins">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold poppins text-center mb-8">About Us</h2>
+            <p class="text-gray-600 text-lg max-w-4xl mx-auto text-center mb-8">
+                CampusPlacement — CareerConnect is dedicated to bridging the gap between students and their dream careers. Our platform provides comprehensive resources, from skill-building and mock interviews to personalized guidance, ensuring every student is well-prepared for the professional world. We believe that with the right support, every student can achieve their full potential.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Our Mission</h3>
+                    <p class="text-gray-500 mb-4">
+                        To empower students with the tools and knowledge necessary to navigate the complexities of the job market and secure rewarding careers. We strive to foster a culture of continuous learning and professional growth.
+                    </p>
+                    <h3 class="text-2xl font-semibold mb-4">Our Vision</h3>
+                    <p class="text-gray-500">
+                        To be the leading career development platform for students, recognized for our innovative approach, commitment to success, and a vast network of industry professionals and alumni.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <img src="https://placehold.co/600x400/2B6CB0/ffffff?text=Our+Team" alt="Our Team" class="rounded-2xl shadow-lg mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training & Placement Page -->
+    <section id="training" class="py-20 poppins">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold poppins text-center mb-8">Training & Placement</h2>
+            <p class="text-gray-600 text-lg max-w-4xl mx-auto text-center mb-8">
+                Our comprehensive training programs are designed to equip you with the skills demanded by today's industries. From technical expertise to soft skills, we've got you covered.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card text-center">
+                    <i class="feature-icon fas fa-laptop-code"></i>
+                    <h3 class="text-xl font-semibold mb-2">Technical Training</h3>
+                    <p class="text-gray-500">Specialized workshops in popular technologies like Data Science, Cloud Computing, and Web Development.</p>
+                </div>
+                <div class="card text-center">
+                    <i class="feature-icon fas fa-chalkboard-teacher"></i>
+                    <h3 class="text-xl font-semibold mb-2">Aptitude & Logical Reasoning</h3>
+                    <p class="text-gray-500">Structured courses and practice tests to ace company-specific aptitude rounds.</p>
+                </div>
+                <div class="card text-center">
+                    <i class="feature-icon fas fa-handshake"></i>
+                    <h3 class="text-xl font-semibold mb-2">Interview Skills</h3>
+                    <p class="text-gray-500">Mock interviews, group discussion training, and personalized feedback sessions.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <button class="btn-primary">View Training Programs</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Higher Studies Page -->
+    <section id="studies" class="py-20 poppins">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold poppins text-center mb-8">Higher Studies</h2>
+            <p class="text-gray-600 text-lg max-w-4xl mx-auto text-center mb-8">
+                Planning to pursue postgraduate studies? Our resources and mentorship programs will guide you through the process, from choosing a university to preparing for entrance exams.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card text-center">
+                    <i class="feature-icon fas fa-book-open"></i>
+                    <h3 class="text-xl font-semibold mb-2">Exam Prep</h3>
+                    <p class="text-gray-500">Roadmaps and practice materials for exams like GATE, GRE, GMAT, and IELTS.</p>
+                </div>
+                <div class="card text-center">
+                    <i class="feature-icon fas fa-building-columns"></i>
+                    <h3 class="text-xl font-semibold mb-2">University Selection</h3>
+                    <p class="text-gray-500">Expert guidance on shortlisting universities and programs that align with your career goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="py-20 poppins">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold poppins text-center mb-8">Get in Touch</h2>
+            <div class="max-w-xl mx-auto card p-8">
+                <form id="contactForm">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border-2 focus:outline-none focus:border-indigo-600 transition-colors" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border-2 focus:outline-none focus:border-indigo-600 transition-colors" placeholder="your@email.com" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-lg border-2 focus:outline-none focus:border-indigo-600 transition-colors" placeholder="Your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full">Send Message</button>
+                </form>
+            </div>
+            <div id="contact-message" class="mt-8 text-center text-gray-600 poppins hidden"></div>
+        </div>
+    </section>
+
+    <!-- Login Page -->
+    <section id="login" class="py-20 poppins">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold poppins text-center mb-8">Login to your Account</h2>
+            <div class="max-w-md mx-auto card p-8">
+                <form>
+                    <div class="mb-4">
+                        <label for="username" class="block text-gray-700 font-semibold mb-2">Username</label>
+                        <input type="text" id="username" name="username" class="w-full px-4 py-3 rounded-lg border-2 focus:outline-none focus:border-indigo-600 transition-colors" placeholder="Enter your username" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="password" class="block text-gray-700 font-semibold mb-2">Password</label>
+                        <input type="password" id="password" name="password" class="w-full px-4 py-3 rounded-lg border-2 focus:outline-none focus:border-indigo-600 transition-colors" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn-primary w-full">Login</button>
+                    <p class="mt-4 text-center text-sm text-gray-500">
+                        Don't have an account? <a href="#" class="text-indigo-600 hover:underline">Sign up here</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white poppins py-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">CareerConnect</h3>
+                <p class="text-gray-400 text-sm">Empowering students for a brighter future.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors" onclick="showPage('home')">Home</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors" onclick="showPage('about')">About</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors" onclick="showPage('contact')">Contact</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                <div class="flex space-x-4 text-2xl">
+                    <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 text-center text-gray-500 text-sm">
+            &copy; <span id="currentYear"></span> CampusPlacement — CareerConnect. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- JavaScript for Navigation & Form -->
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
+
+        // Toggle mobile menu
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Page navigation handler
+        function showPage(pageId) {
+            const sections = document.querySelectorAll('main, section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(pageId).classList.add('active');
+            // Close mobile menu on click
+            mobileMenu.classList.add('hidden');
+        }
+
+        // Contact form submission handler
+        const contactForm = document.getElementById('contactForm');
+        const contactMessage = document.getElementById('contact-message');
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = {
+                name: contactForm.name.value,
+                email: contactForm.email.value,
+                message: contactForm.message.value
+            };
+
+            // Simulating a backend API call
+            console.log('Form data to be submitted:', formData);
+            contactMessage.textContent = 'Thank you for your message! We will get back to you shortly.';
+            contactMessage.classList.remove('hidden');
+
+            // Reset form after a small delay
+            setTimeout(() => {
+                contactForm.reset();
+                contactMessage.classList.add('hidden');
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
